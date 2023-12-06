@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle at bottom, rgb(0, 0, 54) 0, black 100%);
+    overflow: hidden;
+}
+
+form {
+    background-color: #008b8b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #00b5c2; /* Text color changed to white for better visibility */
+}
+
+#mediaType, #videoNumber, #season, #episode {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #001625;
+    color: #00899b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#tvOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#videoPlayer {
+    width: 60%; /* Adjusted to 60% for a more average size */
+    max-width: 800px; /* Set a maximum width to prevent it from getting too large */
+    height: 60vh; /* Adjusted to 60% of the viewport height */
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; /* Added margin to the top for spacing */
+}
+
+#videoPlayer iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
