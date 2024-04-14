@@ -6,84 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>streaming</title>
-
-
+    <title>le filme</title>
+    <div class="button-container">
+        <button id="btntheme">Theme</button>
+    </div>
 </head>
     <body id="body">
-        <canvas id="canv"></canvas>
-
-
-        <form id="videoForm">
-            <label for="mediaType">Media type</label>
-            <select id="mediaType">
-                <option value="movies">Movies</option>
-                <option value="tv">TV Shows</option>
-            </select>
-            <label for="videoNumber">Media ID</label>
-            <input type="text" id="videoNumber" name="videoNumber" required>
-            <div id="tvOptions" style="display: none;">
-                <label for="season">Season:</label>
-                <select id="season" name="season">
-                    <!-- Populate with your season options -->
-                    <option value="1">Season 1</option>
-                    <option value="2">Season 2</option>
-                    <option value="3">Season 3</option>
-                    <option value="4">Season 4</option>
-                    <option value="5">Season 5</option>
-                    <option value="6">Season 6</option>
-                    <option value="7">Season 7</option>
-                    <option value="8">Season 8</option>
-                    <option value="9">Season 9</option>
-                    <option value="10">Season 10</option>
-                    <!-- Add more options as needed -->
-                </select>
-                <label for="episode">Episode:</label>
-                <select id="episode" name="episode">
-                    <!-- Populate with your episode options -->
-                    <option value="1">Episode 1</option>
-                    <option value="2">Episode 2</option>
-                    <option value="3">Episode 3</option>
-                    <option value="4">Episode 4</option>
-                    <option value="5">Episode 5</option>
-                    <option value="6">Episode 6</option>
-                    <option value="7">Episode 7</option>
-                    <option value="8">Episode 8</option>
-                    <option value="9">Episode 9</option>
-                    <option value="10">Episode 10</option>
-                    <option value="11">Episode 11</option>
-                    <option value="12">Episode 12</option>
-                    <option value="13">Episode 13</option>
-                    <option value="14">Episode 14</option>
-                    <option value="15">Episode 15</option>
-                    <option value="16">Episode 16</option>
-                    <option value="17">Episode 17</option>
-                    <option value="18">Episode 18</option>
-                    <option value="19">Episode 19</option>
-                    <option value="20">Episode 20</option>
-                    <option value="21">Episode 21</option>
-                    <option value="22">Episode 22</option>
-                    <option value="23">Episode 23</option>
-                    <option value="24">Episode 24</option>
-                    <option value="25">Episode 25</option>
-                    <option value="26">Episode 26</option>
-                    <option value="27">Episode 27</option>
-                    <option value="28">Episode 28</option>
-                    <option value="29">Episode 29</option>
-                    <option value="30">Episode 30</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
-            <button type="button" onclick="playVideo()">Play : )</button>
+        <form  id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
         </form>
+        <div id="tags"></div>
+        <div id="myNav" class="overlay">
     
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content" id="overlay-content"></div>
         
     
+          </div>
+        <main id="main"></main>
+        <div class="pagination">
+            <div class="page" id="prev">Previous Page</div>
+            <div class="current" id="current">1</div>
+            <div class="page" id="next">Next Page</div>
     
-    
-    
-    
-        <div id="videoPlayer"></div>
+        </div>
         <script src="script.js"></script>
     
     
